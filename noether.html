@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Emmy Noether || İpek's Archive</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <body style="background: url('nother.png') center center fixed; background-size: cover;">
+     
+
+     <select class="form-select" id="language-select" name="language">
+          <option value="en">language</option>
+          <option value="en">English</option>
+          <option value="tr">Türkçe<tr></tr></option>
+          
+      </select>
+
+      <script>
+          const languageSelect = document.getElementById('language-select');
+          languageSelect.addEventListener('change', function() {
+            const selectedValue = languageSelect.value;
+            if (selectedValue === 'tr') {
+              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/website/bilim.html'; // Replace with the actual URL of the Turkish language page
+            } else {
+              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/science.html'; // Replace with the actual URL of the English language page
+            }
+          });
+        </script>
+
+     <style>
+
+          * {
+    box-sizing: border-box;
+  }
+
+  h2 {
+               font-size: 2rem;
+               color: rgb(68, 67, 69);
+               text-align: center;
+               font-family: "Georgia", sans-serif;
+               background-color:  #f3f3f3; /* Background color for the block */
+    padding: 10px 20px; /* Add padding to create spacing around the text */
+  
+    border-radius: 10px; /* Add rounded corners */
+             }
+
+
+            
+             h1 {
+               font-size: 1rem;
+               color: rgb(96, 43, 20);
+               text-align: center;
+             }
+         
+             p {
+               font-size: 16px;
+               color: rgb(81, 81, 94);
+               text-align: center;
+             }
+
+     
+
+             nav {
+           background-color: #f3f3f3;
+           padding: 30px;
+           text-align: center;
+           font-size: 20px;
+         }
+     
+         nav ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+         }
+     
+         nav ul li {
+           display: inline-block;
+           margin-right: 50px;
+         }
+     
+         nav ul li a {
+           text-decoration: none;
+           color: #2f2f2f;
+         }
+     
+
+         .transparent-block {
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      padding: 50px;
+      margin: 100px auto;
+      max-width: 1000px;
+      text-align: center;
+    }
+
+  .transparent-block p {
+    color: #5f5050; /* Change this value to your desired paragraph color */
+  }
+
+  a {
+      color: #5f5050; /* Default link color */
+      text-decoration: underline; 
+    }
+
+
+           </style>
+     </head>
+     <body>
+      <header>
+        <h1><img src="sm7.png" ></h1>
+      </header>
+        
+      <h2>Science</h2>
+    
+
+       
+       <div class="transparent-block">
+        <h1>Emmy Noether</h1>
+  
+        
+          <p><strong>Emmy Noether and her struggles:</strong> 
+            Born in Bavaria, Emmy Noether (1882–1935) was a brilliant German mathematician and theoretical physicist. She faced significant challenges in her 
+          career due to her gender, Jewish identity, and the political climate of Nazi Germany. As a woman in the early 20th century, Noether encountered gender-based 
+          discrimination, including restrictions on obtaining formal academic positions and delivering lectures under male colleagues' names. The rise of the Nazi 
+          regime further exacerbated her struggles, leading to her dismissal from the University of Göttingen due to anti-Jewish laws. Despite these adversities, she found refuge in the 
+          United States, securing a position at Bryn Mawr College. Noether's enduring legacy lies not only in her groundbreaking contributions to mathematics and physics but also in her resilience against 
+          discrimination based on both gender and ethnicity during challenging historical times.
+          </p>
+
+          <center>
+            <img src="noe.jpeg">
+        </center>
+              
+            </p>   
+      </div>
+
+
+
+      <div class="transparent-block">
+        <p>Let's go through some terms and concepts before explaining what brilliant Emmy Noether
+          has achieved.
+        </p>
+        <p><strong>What is Symmetry: </strong> "An object is symmetrical if there is an action we can perform on it, such as reflecting or turning it, so that after the action, it appears identical to its original state.
+           For instance, a symmetrical vase retains its appearance even if we reflect or rotate it.
+            Symmetry, in this context, refers to an operation that can be done to an object or system that leaves it unchanged.
+            <strong>A conservation law </strong>, meanwhile, refers to a physical quantity that remains fixed and hence does not fluctuate over time. These 2 terms somehow
+            feels relatable.
+            Few symmetries to understand before diving into the whole idea:
+            <p><strong>Space translation symmetry:</strong> 
+              Think about an object let's say an apple. Picture sliding the apple to a different location—perhaps to a corner. 
+            It has a symmetry if you can slide the whole apple to a position in which it looks exactly the same as it did in its original position.
+            To describe translation symmetry, you need to specify the distance and direction of the translation.
+            <p><strong>Rotational Symmetry:</strong>
+            Imagine you have a perfectly round pizza on a round table. If you give the pizza a 
+            spin while it's still on the table, it looks the same no matter which direction you're facing. That's rotational symmetry.
+            <p><strong>Time Translation Symmetry:</strong> 
+            Time translation symmetry refers to the idea that the laws of physics remain the same at all times. 
+            In simpler terms, if you were observing a process or an object, and you came back later (whether it's a second or a century later), 
+            the rules governing that process or object wouldn't have changed.Imagine a perfectly smooth, frictionless hill, and a ball rolling down it. In this idealized scenario, 
+            if you roll the ball down the hill and observe its motion, the laws of physics would ensure that the ball maintains the exact velocity and trajectory. Now, if you were to
+             repeat the experiment a week later under the same ideal conditions, the ball would still roll down the hill with the same laws of physics, exhibiting time translation symmetry.
+        </p>
+
+     
+          </p>
+        </div>
+
+
+        
+
+        <div class="transparent-block">
+            <p><strong>Connecting the dots between the terms:</strong> The conservation laws were already there, thanks to Newton. However with Einstein's general relativity
+                there were some tiny issues about the conservation of energy. He suggested that gravity isn't a force but rather the result of space and time bending around mass and energy. This new perspective challenges the traditional idea of gravity as a force acting at a distance.
+                 However, it also raised a concern because it seemed to clash with the long-standing principle of energy conservation.
+                It seemed like our old rules about energy can change forms but can never be destroyed were not quite working. 
+                -Total energy is supposed to remain constant after all.-
+
+                <p>
+                 Einstein had been searching for an expression of the laws of gravitation, invariant under general coordinate transformations.
+                 In 1915, two of the world’s top mathematicians, David Hilbert and Felix Klein, invited Emmy Noether to the University of Göttingen to investigate this puzzle.
+                Noether, gladly accepted the challenge and her Theorem became a pivotal solution to this challenge. 
+                Her theorem established a profound connection between symmetries and conservation laws. 
+
+                 What she uncovered went beyond mere equations; it established a profound link between symmetries and conservation laws. In the realm of general relativity, 
+                 where the symmetries of spacetime are intimately entwined with gravitational interactions, Noether's insights provided an elegant and universal framework. 
+                 This framework offered a clear understanding of how conservation laws adapt and persist in the dynamic, curved landscape of spacetime. 
+                </p>
+          </p>
+              
+            </p>
+
+        </div>
+
+        <div class="transparent-block">
+          <p>Now, let's explore the interplay of three crucial symmetries with conservation laws. 
+            First, the symmetry related to translational invariance implies that the laws of physics remain consistent 
+            regardless of where an experiment is conducted in space. This symmetry, as uncovered by Noether, gives rise to the
+             conservation of linear momentum. In the dynamic ballet of curved spacetime, this translates into a fundamental 
+             principle: the persistence of momentum despite the undulating gravitational landscape.
+
+              <p>
+                Second, consider rotational invariance, a symmetry where the laws of physics remain unchanged under rotations. 
+                Noether's theorem connects this symmetry with the conservation of angular momentum. In the context of general 
+                relativity, where spacetime itself can twist and turn, the conservation of angular momentum stands as a testament 
+                to the unyielding nature of these symmetries.
+              </p>
+
+              <p>Finally, the symmetry of time invariance, meaning the laws of physics endure over time, 
+                aligns with the conservation of energy. Noether's brilliance unveiled the deep connection between this temporal 
+                symmetry and the persistence of energy, even in the warped, dynamic environment of gravitational fields.
+
+Together, these three symmetries and their associated conservation laws form a harmonious trio, 
+illuminating the intricate dance between the fabric of spacetime and the fundamental principles that govern the cosmos. 
+Noether's legacy echoes through the curvature of gravity, revealing the beauty in the symbiosis of symmetries and the conservation
+ of essential physical quantities.
+
+
+        </p>
+            
+          </p>
+
+      </div>
+
+            <div class="transparent-block">
+                <p><strong>There is a lot to say, perhaps you can check these sources that I've used and learn more:</strong> 
+                  
+                   <p><a href="https://www.feynmanlectures.caltech.edu/I_52.html"> Click to see Feynman's Lectures </a>
+                    </p> 
+                     <p><a href=" https://www.discovermagazine.com/the-sciences/how-mathematician-emmy-noethers-theorem-changed-physics"> How Mathematician Emmy Noether's Theorem Changed Physics by Steve Nadis can be found here</a></p>
+                    <p>The Biggest Ideas in the Universe by Sean Caroll (very nice book %100 recommended)
+                    </p>
+                    <p>And my fellow friend ChatGPT!</p>
+          
+                  
+                </p>
+    
+
+        
+      </div>
+
+     </body>
+     
+     
+     
+     </html>
+    
