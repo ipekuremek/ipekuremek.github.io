@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philosophers </title>
+
+  <head><link rel="apple-touch-icon" sizes="180x180" href="CS/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="CS/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="CS/favicon-16x16.png">
+  <link rel="manifest" href="CS/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+       
+</head>
+
+
+</head> 
+    <body style="background: url('arkhee.png') center center fixed; background-size: cover;">
+
+
+     <select class="form-select" id="language-select" name="language">
+          <option value="en">language</option>
+          <option value="en">English</option>
+          <option value="tr">Turkish <tr></tr></option>
+          
+      </select>
+
+      <script>
+          const languageSelect = document.getElementById('language-select');
+          languageSelect.addEventListener('change', function() {
+            const selectedValue = languageSelect.value;
+            if (selectedValue === 'tr') {
+              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/website/trhome.html'; // Replace with the actual URL of the Turkish language page
+            } else {
+              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/enhome.html'; // Replace with the actual URL of the English language page
+            }
+          });
+        </script>
+
+     <style>
+
+          * {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+  font-family: 'MyUniqueFontFamily';
+  src: url('path-to-your-font-file.ttf') format('truetype');
+  /* You can include additional font formats like woff, woff2, etc. for better compatibility */
+}
+
+     h2 {
+               font-size: 2rem;
+               color: rgb(92, 82, 82);
+               text-align: center;
+               font-family: "Courier New", sans-serif;
+             }
+
+     
+             h1 {
+                font-family: 'MyUniqueFontFamily', Arial, sans-serif; /* Use the custom font as the preferred font */
+  font-size: 1rem; /* Adjust the font size as needed */
+  text-shadow: 1px 1px 1px rgba(115, 0, 255, 0.7), 2px 2px 1px rgba(44, 39, 81, 0.7);
+  /* Adjust the text-shadow values for the desired shadow effect.
+     The last component (0.7) represents the shadow's opacity. */
+
+  color: rgb(174, 148, 227); /* Set your desired text color */
+  text-align: center; /* Center-align the text */
+             }
+         
+             p {
+            font-family: 'MyUniqueFontFamily', Arial, sans-serif;
+               font-size: 16px;
+               color: #a39e9e;;
+               text-align: center;
+               font-family: "Courier New", sans-serif;
+             }
+
+     
+
+             nav {
+           background-color: #f3f3f3;
+           padding: 30px;
+           text-align: center;
+           font-size: 20px;
+         }
+     
+         nav ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+         }
+     
+         nav ul li {
+           display: inline-block;
+           margin-right: 50px;
+         }
+     
+         nav ul li a {
+           text-decoration: none;
+           color: #2f2f2f;
+         }
+     
+
+         .transparent-block1 {
+      background-color: rgba(248, 248, 248, 0.8);
+      border-radius: 10px;
+      padding: 50px;
+      margin: 100px auto;
+      max-width: 2000px;
+      text-align: center;
+    }
+
+    .transparent-block1 p {
+    color: #dcdbdb; /* Change this value to your desired paragraph color */
+  }
+
+           </style>
+     </head>
+     <body>
+      <header>
+        <h1><img src="sm3.png" ></h1>
+      </header>
+        
+          
+
+            <style>
+                /* Your tree styling CSS remains unchanged */
+                .tree {
+    
+    padding: 20px;
+    text-align: center;
+    /* Any other styling properties you want for the entire tree */
+}
+
+.tree {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .node {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 20px;
+      height: 10px;
+    
+      border-radius: 8px;
+      /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+
+
+      font-size: 16px;
+          
+               font-family: "Gloria Hallelujah", cursive;
+               font-weight: 400;
+                  color: rgb(98, 98, 98);
+    }
+
+    .nodep{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      color: #757070;
+      width: 100px; /* Adjust the width as needed */
+  
+   
+
+      font-size: 16px;
+          
+               font-family: "Gloria Hallelujah", cursive;
+               font-weight: 400;
+                  color: rgb(98, 98, 98);
+
+    white-space: nowrap; /* Prevent text from wrapping */
+   
+    
+    }
+
+    .node:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      width: 0;
+      height: 10px;
+      border-left: 1px solid #858585;
+    }
+   
+
+    .horizontal-line {
+    
+      height: 2px;
+      background-color: #8b8b8b; /* Change the color as needed */
+      
+  
+    }
+
+    .philosopher a {
+      color: #767676;
+
+      font-size: 16px;
+          
+               font-family: "Gloria Hallelujah", cursive;
+               font-weight: 400;
+                  color: rgb(98, 98, 98);
+    }
+
+     
+  
+
+       
+   </style>
+</head>
+<div class="transparent-block1">
+
+  <div class="tree">
+    <!-- Pre-Socratic Era -->
+    <div class="nodep" style="top: 20px; left: 50%;">Pre-Socratic Era Naturalist Philosphers</div>
+    <div class="horizontal-line" style="top:10px; margin:60px ;margin-left: 24%;width: 62%;"></div>
+    <!-- Miletos School -->
+    <div class="node" style="top: 120px; left: 25%;">Miletos School</div>
+    <div class="line" style="height: 60px; top: 80px; left: 37.5%;"></div>
+    <div class="line" style="height: 60px; top: 80px; left: 62.5%;"></div>
+    <div class="node" style="height: 60px; top: 200px; left: 25%;"></div>
+    <div class="horizontal-line" style="top:5px; margin:-65px ;margin-left:3%;width: 36%;"></div>
+
+    <!-- Thales -->
+    <div class="node nested-node philosopher" style="top: 240px; left: 5%;"><a href="thales.html">Thales</a></div>
+    <!-- Anaximander -->
+    <div class="node nested-node philosopher" style="top: 240px; left: 20%;"><a href="anaximander.html">Anaximander</a></div>
+    <!-- Anaximenes / Anaksimandros -->
+    <div class="node nested-node philosopher" style="top: 240px; left: 35%; "><a href="anaximenes.html">Anaximenes</a></div>
+    <div class="line" style="height: 60px; top: 200px; left: 50%;"></div>
+
+
+    <!-- Elea School -->
+    <div class="node" style="top: 120px; left: 80%;">Elea School</div>
+    <div class="node" style="height: 60px; top: 200px; left: 80%;"></div>
+    <div class="horizontal-line" style="top:5px; margin:5px ;margin-left: 67%;width: 38%;"></div>
+    <div class="line" style="height: 60px; top: 80px; left: 180%;"></div>
+    <div class="line" style="height: 60px; top: 80px; left: 185%;"></div>
+    <div class="node" style="height: 60px; top: 200px; left: 195%;"></div>
+
+    <div class="node nested-node philosopher" style="top: 240px; left: 70%;"><a href="parmenides.html">Parmenides</a></div>
+    
+    <div class="node nested-node philosopher" style="top: 240px; left: 85%; "><a href="zenon.html">Zenon</a></div>
+
+    <div class="node nested-node philosopher" style="top: 240px; left: 100%; "><a href="Ksenophes.html">Ksenophes</a></div>
+    <div class="line" style="height: 60px; top: 200px; left: 50%;"></div>
+
+
+
+
+    <!-- <div class="node nested-node philosopher" style="top: 120px; left: 40%;"> -->
+      <div class="node nested-node philosopher" style="top: 120px; left: 65%;"><a href="Phytagoras.html">Phytagoras</a></div>
+      
+
+      <div class="node nested-node philosopher" style="top: 120px; left: 45%;"><a href="herakliatos.html">Herakliatos</a></div>
+
+    
+      
+
+
+  <div class="tree">
+    <!-- Pre-Socratic Era -->
+    <div class="nodep" style="top: 20px; left: 50%;">Pre-Socratic Era Pluralist Philosophers</div>
+    <div class="horizontal-line" style="top:10px; margin:60px ;margin-left: 24%;width: 55%;"></div>
+ 
+
+    <div class="line" style="height: 60px; top: 80px; left: 37.5%;"></div>
+    <div class="line" style="height: 60px; top: 80px; left: 62.5%;"></div>
+  
+
+
+    <div class="node nested-node philosopher" style="top: 120px; left: 30%;"><a href="parmenides.html">Empedokles</a></div>
+    <div class="node nested-node philosopher" style="top: 120px; left: 50%; "><a href="zenon.html">Anaksagoras</a></div>
+    <div class="node nested-node philosopher" style="top: 120px; left: 70%; "><a href="Ksenophes.html">Demokritos</a></div>
+
+
+  </div>
+  
+</div>
+</body>
+
+</html>
