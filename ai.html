@@ -50,11 +50,9 @@
   /* You can include additional font formats like woff, woff2, etc. for better compatibility */
 }
 
-         @media (max-width: 360px) {
-  body {
-    background-size: contain; /* Change to 'contain' or adjust as needed for smaller screens */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    background-position: top center; /* Adjusts the position for mobile, if necessary */
+      @media only screen and (max-width:749px) {
+  .parallax {
+    background-attachment: inherit;
   }
 }
 
