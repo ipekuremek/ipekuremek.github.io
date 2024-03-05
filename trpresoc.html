@@ -51,12 +51,20 @@
   /* You can include additional font formats like woff, woff2, etc. for better compatibility */
 }
 
+
+h1, h2, p {
+      text-align: center;
+      color: rgb(98, 98, 98);
+    }
+
+
      h2 {
                font-size: 2rem;
                color: rgb(92, 82, 82);
                text-align: center;
                font-family: "Courier New", sans-serif;
              }
+
 
      
              h1 {
@@ -102,37 +110,8 @@
            text-decoration: none;
            color: #2f2f2f;
          }
-     
-         @media only screen and (max-width: 600px) {
-  h1, h2, p, .node, .nodep {
-    font-size: smaller; /* Adjust font sizes */
+  
 
-
-   /* Responsive adjustments */
-   @media (max-width: 768px) {
-        /* Adjust styles for smaller screens */
-        .transparent-block1, nav, .tree, .node, .nodep, h1, h2, p {
-          /* Example: reduce padding, font size, etc. */
-        }
-      }
-
-  }
-
-  h1, h2, p {
-    font-size: 16px; /* Larger font sizes for headers and paragraphs */
-  }
-
-  /* Adjust the layout for smaller screens */
-  .tree, .node, .nodep {
-    display: block; /* Stack elements vertically */
-    width: 100%; /* Full width */
-    margin: auto; /* Center align */
-  }
-
-  .node, .nodep {
-    position: static; /* Override absolute positioning */
-  }
-}
 
 
          .transparent-block1 {
@@ -145,13 +124,22 @@
     }
 
 
-           </style>
-     </head>
-     <body>
-      <header>
-        <h1><img src="sm3.png" ></h1>
-      </header>
-        
+    @media (max-width: 768px) {
+      h1, h2, p {
+        font-size: 90%; /* Slightly reduce font size on smaller screens */
+      }
+
+      .form-select {
+        margin-top: 10px;
+      }
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1><img src="sm3.png" alt="Logo"></h1>
+  </header>
       
 
    
@@ -237,6 +225,7 @@
   
     }
 
+
     .philosopher a {
       color: #767676;
       font-size: 16px;
@@ -256,47 +245,47 @@
 
   <div class="tree">
     <!-- Pre-Socratic Era -->
-    <div class="nodep" style="top: 20px; left: 50%;">Pre-Sokratik Dönem Natüralist Filozoflar</div>
-    <div class="horizontal-line" style="top:10px; margin:60px ;margin-left: 24%;width: 62%;"></div>
+    <div class="nodep" style="top: 50px; left: 50%;">Pre-Sokratik Dönem Natüralist Filozoflar</div>
+    <div class="horizontal-line" style="top:10px; margin:60px ;margin-left: 20%;width: 85%;"></div>
     <!-- Miletos School -->
-    <div class="node" style="top: 120px; left: 25%;">Miletos Okulu</div>
+    <div class="node" style="top: 120px; left: 25%;font-size: 12px;">Miletos Okulu</div>
     <div class="line" style="height: 60px; top: 80px; left: 37.5%;"></div>
     <div class="line" style="height: 60px; top: 80px; left: 62.5%;"></div>
     <div class="node" style="height: 60px; top: 200px; left: 25%;"></div>
-    <div class="horizontal-line" style="top:5px; margin:-65px ;margin-left:3%;width: 36%;"></div>
+    <div class="horizontal-line" style="top:5px; margin:-65px ;margin-left:3%;width: 33%;"></div>
 
     <!-- Thales -->
-    <div class="node nested-node philosopher" style="top: 240px; left: 5%;"><a href="thales.html">Thales</a></div>
+    <div class="node" style="top: 240px; left: 3%;font-size: 10px;"><a href="thales.html">Thales</a></div>
     <!-- Anaximander -->
-    <div class="node nested-node philosopher" style="top: 240px; left: 20%;"><a href="anaximandros.html">Anaximander</a></div>
+    <div class="node" style="top: 240px; left: 15%;font-size: 10px;"><a href="anaximandros.html">Anaximander</a></div>
     <!-- Anaximenes / Anaksimandros -->
-    <div class="node nested-node philosopher" style="top: 240px; left: 35%; "><a href="anaximenes.html">Anaximenes</a></div>
+    <div class="node" style="top: 240px; left: 30%; font-size: 10px;"><a href="anaximenes.html">Anaximenes</a></div>
     <div class="line" style="height: 60px; top: 200px; left: 50%;"></div>
 
 
     <!-- Elea School -->
-    <div class="node" style="top: 120px; left: 80%;">Elea Okulu</div>
+    <div class="node" style="top: 120px; left: 80%; width:50;font-size: 12px;">Elea Okulu</div>
     <div class="node" style="height: 60px; top: 200px; left: 80%;"></div>
     <div class="horizontal-line" style="top:5px; margin:5px ;margin-left: 67%;width: 38%;"></div>
     <div class="line" style="height: 60px; top: 80px; left: 180%;"></div>
     <div class="line" style="height: 60px; top: 80px; left: 185%;"></div>
     <div class="node" style="height: 60px; top: 200px; left: 195%;"></div>
 
-    <div class="node nested-node philosopher" style="top: 240px; left: 70%;"><a href="parmenides.html">Parmenides</a></div>
+    <div class="node" style="top: 240px; left: 65%;font-size: 10px;"><a href="parmenides.html">Parmenides</a></div>
     
-    <div class="node nested-node philosopher" style="top: 240px; left: 85%; "><a href="zenon.html">Zenon</a></div>
+    <div class="node" style="top: 240px; left: 80%;font-size: 10px; "><a href="zenon.html">Zenon</a></div>
 
-    <div class="node nested-node philosopher" style="top: 240px; left: 100%; "><a href="Ksenophes.html">Ksenophes</a></div>
+    <div class="node" style="top: 240px; left: 95%;font-size: 10px; "><a href="Ksenophes.html">Ksenophes</a></div>
     <div class="line" style="height: 60px; top: 200px; left: 50%;"></div>
 
 
 
 
     <!-- <div class="node nested-node philosopher" style="top: 120px; left: 40%;"> -->
-      <div class="node nested-node philosopher" style="top: 120px; left: 65%;"><a href="Pisagor.html">Pisagor</a></div>
+      <div class="node" style="top: 120px; left: 65%;font-size: 12px;"><a href="Pisagor.html">Pisagor</a></div>
       
 
-      <div class="node nested-node philosopher" style="top: 120px; left: 45%;"><a href="heraklitos.html">Heraklitos</a></div>
+      <div class="node" style="top: 120px; left: 45%;font-size: 12px;"><a href="heraklitos.html">Heraklitos</a></div>
 
     
       
@@ -306,18 +295,14 @@
 
   <div class="tree">
     <!-- Pre-Socratic Era -->
-    <div class="nodep" style="top: 20px; left: 50%;">Pre-Sokratik Dönem Pluralist Filozoflar</div>
-    <div class="horizontal-line" style="top:10px; margin:60px ;margin-left: 24%;width: 55%;"></div>
+    <div class="nodep" style="top: 20px; left: 48%;">Pre-Sokratik Dönem Pluralist Filozoflar</div>
+    <div class="horizontal-line" style="top:8px; margin:50px ;margin-left: 20%;width: 80%;"></div>
  
 
-    <div class="line" style="height: 60px; top: 80px; left: 37.5%;"></div>
-    <div class="line" style="height: 60px; top: 80px; left: 62.5%;"></div>
-  
 
-
-    <div class="node nested-node philosopher" style="top: 120px; left: 30%;"><a href="parmenides.html">Empedokles</a></div>
-    <div class="node nested-node philosopher" style="top: 120px; left: 50%; "><a href="zenon.html">Anaksagoras</a></div>
-    <div class="node nested-node philosopher" style="top: 120px; left: 70%; "><a href="Ksenophes.html">Demokritos</a></div>
+    <div class="node" style="top: 120px; left: 25%;font-size: 10px;"><a href="parmenides.html">Empedokles</a></div>
+    <div class="node" style="top: 120px; left: 45%;font-size: 10px; "><a href="zenon.html">Anaksagoras</a></div>
+    <div class="node" style="top: 120px; left: 65%; font-size: 10px;"><a href="Ksenophes.html">Demokritos</a></div>
 
 </div>
 
