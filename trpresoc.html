@@ -103,6 +103,37 @@
            color: #2f2f2f;
          }
      
+         @media only screen and (max-width: 600px) {
+  h1, h2, p, .node, .nodep {
+    font-size: smaller; /* Adjust font sizes */
+
+
+   /* Responsive adjustments */
+   @media (max-width: 768px) {
+        /* Adjust styles for smaller screens */
+        .transparent-block1, nav, .tree, .node, .nodep, h1, h2, p {
+          /* Example: reduce padding, font size, etc. */
+        }
+      }
+
+  }
+
+  h1, h2, p {
+    font-size: 16px; /* Larger font sizes for headers and paragraphs */
+  }
+
+  /* Adjust the layout for smaller screens */
+  .tree, .node, .nodep {
+    display: block; /* Stack elements vertically */
+    width: 100%; /* Full width */
+    margin: auto; /* Center align */
+  }
+
+  .node, .nodep {
+    position: static; /* Override absolute positioning */
+  }
+}
+
 
          .transparent-block1 {
       background-color: rgba(248, 248, 248, 0.8);
@@ -138,14 +169,6 @@
 
     
 }
-
-   /* Responsive adjustments */
-   @media (max-width: 768px) {
-        /* Adjust styles for smaller screens */
-        .transparent-block1, nav, .tree, .node, .nodep, h1, h2, p {
-          /* Example: reduce padding, font size, etc. */
-        }
-      }
 
 
 .tree {
