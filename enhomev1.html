@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Welcome to Ipek's Archive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Elegant font -->
   <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
   <style>
@@ -39,7 +37,7 @@
       max-width: 500px;
     }
 
-        .language-switcher {
+    .language-switcher {
       position: absolute;
       top: 20px;
       right: 20px;
@@ -92,13 +90,25 @@
       height: 200px;
       object-fit: contain;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
       margin-bottom: 5px;
+      transition: all 0.3s ease;
     }
 
-    .card:hover .icon {
-      transform: scale(1.1);
+    /* Hover: Masaüstü için icon değiştirme */
+    .card:hover .philosophy-icon {
+      content: url('cat3.gif');
+    }
+
+    .card:hover .science-icon {
+      content: url('cat3.gif');
+    }
+
+    .card:hover .book-icon {
+      content: url('cat3.gif');
+    }
+
+    .card:hover .yoga-icon {
+      content: url('cat3.gif');
     }
 
     footer {
@@ -108,17 +118,22 @@
       margin: 40px auto 20px;
     }
   </style>
+
+  <script>
+    function swapImage(el, gifSrc, pngSrc) {
+      const img = el.querySelector('img');
+      img.src = gifSrc;
+      setTimeout(() => {
+        img.src = pngSrc;
+      }, 1500);
+    }
+  </script>
 </head>
 <body>
 
-
-      <!-- Language Switcher -->
   <div class="language-switcher">
     <a href="trhomev1.html">Türkçe</a>
   </div>
-
-
-
 
   <header>
     <h1><img src="sm2.png" alt="Ipek's Archive" style="max-width: 250px;"></h1>
@@ -127,20 +142,27 @@
   <h2>Homepage</h2>
 
   <div class="card-container">
-    <a href="felsefe.html" class="card">
-      <img src="mix/felsefe.png" alt="Philosophy" class="icon">
+    <a href="felsefe.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/felsefe.png')">
+      <img src="mix/felsefe.png" alt="Philosophy" class="icon philosophy-icon">
       Philosophy
     </a>
-    <a href="bilim.html" class="card">
-      <img src="mix/bilim.png" alt="Science" class="icon">
+
+    <a href="bilim.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/bilim.png')">
+      <img src="mix/bilim.png" alt="Science" class="icon science-icon">
       Science
     </a>
-    <a href="kitap.html" class="card">
-      <img src="mix/kitap.png" alt="Book Notes" class="icon">
+
+    <a href="kitap.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/kitap.png')">
+      <img src="mix/kitap.png" alt="Book Notes" class="icon book-icon">
       Book Notes
     </a>
-    <a href="yoga.html" class="card">
-      <img src="mix/yoga.png" alt="Yoga" class="icon">
+
+    <a href="yoga.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/yoga.png')">
+      <img src="mix/yoga.png" alt="Yoga" class="icon yoga-icon">
       Yoga
     </a>
   </div>
