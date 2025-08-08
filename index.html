@@ -1,205 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-     <title>Welcome to İpek's Archive </title>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-    <body style="background: url('homepage.png') center center fixed; background-size: cover;">
+  <meta charset="UTF-8">
+  <title>İpek'in Arşivine Hoşgeldiniz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
-  
-  <body background-size: cover;>
-
-    
-
-
-     <select class="form-select" id="language-select" name="language">
-          <option value="en">language</option>
-          <option value="en">English</option>
-          <option value="tr">Türkçe <tr></tr></option>
-          
-      </select>
-
-      <script>
-          const languageSelect = document.getElementById('language-select');
-          languageSelect.addEventListener('change', function() {
-            const selectedValue = languageSelect.value;
-            if (selectedValue === 'tr') {
-              window.location.href = './trhome.html'; // Replace with the actual URL of the Turkish language page
-            } else {
-              window.location.href = './enhome.html'; // Replace with the actual URL of the English language page
-            }
-          });
-        </script>
-
-     <style>
-
-          * {
-    box-sizing: border-box;
-  }
-
-          @media (max-width: 768px) {
-  body {
-    background-size: contain; /* Change to 'contain' or adjust as needed for smaller screens */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    background-position: top center; /* Adjusts the position for mobile, if necessary */
-  }
-}
-          
-  h2 {
-               font-size: 2rem;
-               text-shadow: 1px 1px 1px rgb(235, 224, 251), 2px 2px 1px rgb(255, 255, 255);
-               color: rgb(139, 51, 117);
-               text-align: center;
-               font-family: "Gloria Hallelujah", cursive;
-               background-color: #fefeff5f; /* Background color for the block */
-    padding: 10px 20px; /* Add padding to create spacing around the text */
-  
-    border-radius: 10px; /* Add rounded corners */
-             }
-
-     
-             h1 {
-               font-size: 1rem;
-               text-decoration: none;
-           color: #ba581b;
-    
-           font-weight: 400;
-               text-align: center;
-            
-               
-             }
-         
-             p {
-               font-size: 16px;
-               color: #a39e9e;;
-               text-align: center;
-      
-               text-decoration: none;
-          
-         
-             }
-
-     
-
-             nav {
-           background-color: #f3f3f3;
-           padding: 30px;
-           text-align: center;
-           font-size: 20px;
-         }
-     
-         nav ul {
-           list-style-type: none;
-           margin: 0;
-           padding: 0;
-         }
-     
-         nav ul li {
-           display: inline-block;
-           margin-right: 50px;
-         }
-     
-         nav ul li a {
-           text-decoration: none;
-           color: #6f2b54;
-           font-family: "Gloria Hallelujah", cursive;
-           
-         }
-     
-
-         .transparent-block {
-      background-color: rgba(248, 248, 248, 0.8);
-      border-radius: 10px;
-      padding: 100px;
-      margin: 100px auto;
-      max-width: 1000px;
-      text-align: center;
+  <style>
+    body {
+      background: url('4.png') center center fixed;
+      background-size: cover;
+      margin: 0;
+      font-family: 'Neucha', cursive;
+      color: #4b2c34;
     }
 
+    header {
+      text-align: center;
+      padding: 20px;
+    }
 
+    h1 {
+      font-size: 1.5rem;
+      color: #ba581b;
+    }
 
-           </style>
-     </head>
-     <body>
-      <header>
-        <h1><img src="sm2.png" ></h1>
-      </header>
-        
-      <h2>Homepage</h2>
+    h2 {
+      font-size: 2rem;
+      text-shadow: 1px 1px 1px rgb(235, 224, 251), 2px 2px 1px rgb(255, 255, 255);
+      color: rgb(139, 51, 117);
+      text-align: center;
+      background-color: #fefeffa2;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
 
-      
-       <nav>
-         <ul>
-           
-         <!--- <li><a href="enhome.html">Home</a></li>
-           <li><a href="about.html">About</a></li> -->
-        <!---   <li><a href="yoga.html">Yoga</a></li> 
-           <li><a href="./science.html">Science</a></li> -->
-      <!---     <li><a href="book.html">Book Recommendations </a></li>
-           <li><a href="./philosophy.html">Philosophy </a></li> -->
-       <!---    <li><a href="#">Contact</a></li> -->
-           
-         </ul>
-       </nav>
-          
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255,255,255,0.6);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-          <div class="transparent-block">
-        <h1> AI and Knowledge</h1>
-          <p>  Recently, a new concept has entered our lives: Artificial Intelligence. 
-        Artificial intelligence, which everyone keeps talking about, has actually been 
-        around in our lives for quite some time, only we haven't been very aware of it. With 
-        applications like ChatGPT, now available to the public, artificial intelligence has 
-        become a bit more visible.
-            <p><a href="enai.html"> Click here to read more...</a></p>
-        </p>
-            
-          </p>
-        </div>
+    .language-switcher a {
+      text-decoration: none;
+      color: #5a3a42;
+      font-weight: bold;
+      font-family: 'Neucha', cursive;
+    }
 
-       <div class="transparent-block">
-        <h1> Chaos and Consciousness</h1>
-          <p> The Multiverse of the Mind: An Analogy of Neurons as Dimensions. 
-            Imagine, a universe not of stars and galaxies, but of neurons. 
-          
-            <p> <a href="chaos.html">Click here to read more...</a></p>
-        </p>
-            
-          </p>
-        </div>
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
- 
+    .card {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      padding: 25px 15px;
+      text-align: center;
+      text-decoration: none;
+      color: #5a3a42;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-       <div class="transparent-block">
-        <h1> A Short Explanation About Arche </h1>
-          <p> To understand the philosophers of the pre-Socratic era, 
-            a crucial concept is necessary: Arche. 
-            <p><a href="arche.html">Click here to read more...</a></p>
-        </p>
-            
-          </p>
-        </div>
+    .card:hover {
+      background-color: #efe4f5;
+      transform: scale(1.03);
+    }
 
+    .icon {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 5px;
+      transition: all 0.3s ease;
+    }
 
+    /* Masaüstü için hover */
+    .card:hover .felsefe-icon {
+      content: url('cat3.gif');
+    }
 
+    .card:hover .bilim-icon {
+      content: url('cat3.gif');
+    }
 
+    .card:hover .kitap-icon {
+      content: url('cat3.gif');
+    }
 
+    .card:hover .yoga-icon {
+      content: url('cat3.gif');
+    }
 
-       <div class="transparent-block">
-        <h1> Emmy Noether </h1>
-          <p>  Born in Bavaria, Emmy Noether (1882–1935) was a brilliant German mathematician and theoretical physicist. She faced significant challenges in her 
-            career due to her gender, Jewish identity, and the political climate of Nazi Germany.
-            <p><a href="noether.html"> Click here to read more...</a></p>
-        </p>
-            
-          </p>
-        </div>
-          
-        </div>
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6f6f6f;
+      margin: 40px auto 20px;
+    }
+  </style>
 
-     </body>
-     
-     
-     
-     </html>
-        
+  <script>
+    function swapImage(el, gifSrc, pngSrc) {
+      const img = el.querySelector('img');
+      img.src = gifSrc;
+
+      // Parmak çekildiğinde geri dön
+      setTimeout(() => {
+        img.src = pngSrc;
+      }, 1500); // 1.5 saniye göster
+    }
+  </script>
+</head>
+<body>
+
+  <div class="language-switcher">
+    <a href="enhomev1.html">English</a>
+  </div>
+
+  <header>
+    <h1><img src="sm2.png" alt="İpek'in Arşivi" style="max-width: 250px;"></h1>
+  </header>
+
+  <h2>Anasayfa</h2>
+
+  <div class="card-container">
+    <a href="felsefe.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/felsefe.png')">
+      <img src="mix/felsefe.png" alt="Felsefe" class="icon felsefe-icon">
+      Felsefe
+    </a>
+
+    <a href="bilim.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/bilim.png')">
+      <img src="mix/bilim.png" alt="Bilim" class="icon bilim-icon">
+      Bilim
+    </a>
+
+    <a href="kitap.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/kitap.png')">
+      <img src="mix/kitap.png" alt="Kitap Notları" class="icon kitap-icon">
+      Kitap Notları
+    </a>
+
+    <a href="yoga.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/yoga.png')">
+      <img src="mix/yoga.png" alt="Yoga" class="icon yoga-icon">
+      Yoga
+    </a>
+  </div>
+
+  <footer>© 2025 İpek Üremek</footer>
+
+</body>
+</html>
