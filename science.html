@@ -4,42 +4,13 @@
      <title>Science|| İpek's Archive</title>
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <body style="background: url('science.png') center center fixed; background-size: cover;">
+    <body style="background: url('2s.png') center center fixed; background-size: cover;">
       <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
       
       <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Neucha&display=swap" rel="stylesheet">
 
 
-     <select class="form-select" id="language-select" name="language">
-          <option value="en">language</option>
-          <option value="en">English</option>
-          <option value="tr">Türkçe<tr></tr></option>
-          
-      </select>
 
-      <script>
-          const languageSelect = document.getElementById('language-select');
-          languageSelect.addEventListener('change', function() {
-            const selectedValue = languageSelect.value;
-            if (selectedValue === 'tr') {
-              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/website/bilim.html'; // Replace with the actual URL of the Turkish language page
-            } else {
-              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/science.html'; // Replace with the actual URL of the English language page
-            }
-          });
-
-
-
-           
-    document.addEventListener("DOMContentLoaded", function() {
-        function updateBackground() {
-            if (window.innerWidth <= 768) {
-                document.body.style.backgroundImage = "url('4-mobile.JPG')";
-            } else {
-                document.body.style.backgroundImage = "url('4.png')";
-            }
-        }
-        </script>
 
      <style>
 
@@ -60,10 +31,28 @@
              }
 
 
-     
+        .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255,255,255,0.6);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .language-switcher a {
+      text-decoration: none;
+      color: #5a3a42;
+      font-weight: bold;
+      font-family: 'Gloria Hallelujah', cursive;
+    }
+
+
              h1 {
               text-decoration: none;
-             
+             font-family: "Gloria Hallelujah", sans-serif;
                font-weight: 400;
                font-size: 16px;
                color: #380742;;
@@ -83,12 +72,18 @@
 
      
 
-             nav {
-           background-color: #ffffffb3;
-           padding: 30px;
-           text-align: center;
-           font-size: 20px;
-         }
+                  
+                    nav {
+  background-color: rgba(243, 243, 243, 0.85);
+  padding: 5px 10px; /* daha küçük padding */
+  text-align: center;
+  font-size: 14px; /* yazı boyutu küçültüldü */
+  max-width: 500px; /* genişliği daralt */
+  margin: 20px auto; /* ortala */
+  border-radius: 10px; /* isteğe bağlı: köşe yumuşatma */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* isteğe bağlı: hafif gölge efekti */
+}
+     
      
          nav ul {
            list-style-type: none;
@@ -109,7 +104,7 @@
                font-size: 16px;
                color: #640c75;;
                text-align: center;
-               font-size: 1.2rem;
+               font-size: 1.1rem;
          }
      
 
@@ -126,6 +121,13 @@
            </style>
      </head>
      <body>
+
+                  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <a href="bilim.html">Turkish</a>
+  </div>
+
+
       <header>
         <h1><img src="sm7.png" ></h1>
       </header>
@@ -134,13 +136,13 @@
       
        <nav>
          <ul>
-          <li><a href="enhome.html">Home</a></li>
+          <li><a href="enhomev1.html">Home</a></li>
           <!-- <li><a href="about.html">About</a></li> 
           <li><a href="yoga.html">Yoga</a></li>
            <li><a href="book.html">Book Recommendations </a></li>
           <li><a href="#">Contact</a></li> 
-          <li><a href="science.html">Science</a></li>  -->
-          <li><a href="philosophy.html">Philosophy </a></li>
+          <li><a href="science.html">Science</a></li>  
+          <li><a href="philosophy.html">Philosophy </a></li> -->
           
          </ul>
        </nav>

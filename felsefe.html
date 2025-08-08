@@ -8,9 +8,7 @@
     <body style="background: url('ph.png') center center fixed; background-size: cover;">
       <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
        
-
-
-     <select class="form-select" id="language-select" name="language">
+    <select class="form-select" id="language-select" name="language">
           <option value="en">language</option>
           <option value="en">English</option>
           <option value="tr">Turkish <tr></tr></option>
@@ -22,12 +20,13 @@
           languageSelect.addEventListener('change', function() {
             const selectedValue = languageSelect.value;
             if (selectedValue === 'tr') {
-              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/website/trhome.html'; // Replace with the actual URL of the Turkish language page
+              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/website/enhomev1.html'; // Replace with the actual URL of the Turkish language page
             } else {
-              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/enhome.html'; // Replace with the actual URL of the English language page
+              window.location.href = 'file:///Users/ipekuremek/Desktop/CS/trhomev1.html'; // Replace with the actual URL of the English language page
             }
           });
         </script>
+
 
      <style>
 
@@ -57,6 +56,23 @@
              }
 
      
+        .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255,255,255,0.6);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .language-switcher a {
+      text-decoration: none;
+      color: #5a3a42;
+      font-weight: bold;
+      font-family: 'Gloria Hallelujah', cursive;
+    }
              h1 {
               font-size: 16px;
                color: #866d58;;
@@ -70,19 +86,25 @@
                font-size: 16px;
                color: #ab9d94;;
                text-align: center;
-               font-family: "Gloria Hallelujah", cursive;
+               
                font-weight: 400;
              }
 
      
 
-             nav {
-           background-color: #f3f3f3;
-           padding: 30px;
-           text-align: center;
-           font-size: 20px;
-         }
-     
+      
+                    nav {
+  background-color: rgba(243, 243, 243, 0.85);
+  padding: 5px 10px; /* daha küçük padding */
+  text-align: center;
+  font-size: 14px; /* yazı boyutu küçültüldü */
+  max-width: 500px; /* genişliği daralt */
+  margin: 20px auto; /* ortala */
+  border-radius: 10px; /* isteğe bağlı: köşe yumuşatma */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* isteğe bağlı: hafif gölge efekti */
+}
+
+
          nav ul {
            list-style-type: none;
            margin: 0;
@@ -98,6 +120,7 @@
            text-decoration: none;
            color: #6c5442;
            font-family: "Gloria Hallelujah", cursive;
+            font-size: 1.1rem;
          }
      
 
@@ -114,6 +137,10 @@
            </style>
      </head>
      <body>
+
+      <div class="language-switcher">
+  <a href="philosophy.html">English</a>
+</div> 
       <header>
         <h1><img src="sm3.png" ></h1>
       </header>
@@ -125,9 +152,10 @@
         <ul>
          
         <!---  <li><a href="about.html">About</a></li> -->
-         <li><a href="trhome.html">Anasayfa</a></li>
+         <li><a href="trhomev1.html">Anasayfa</a></li>
        <!---   <li><a href="yoga.html">Yoga</a></li> -->
-          <li><a href="bilim.html">Bilim</a></li> 
+         <!---  <li><a href="bilim.html">Bilim</a></li> -->
+          
      <!---     <li><a href="book.html">Book Recommendations </a></li>   
      <li><a href="felsefe.html"> Felsefe </a></li>-->
          
@@ -136,16 +164,6 @@
         </ul>
       </nav>
 
-
-            <div class="transparent-block">
-        <h1> Yapay Zeka ve Bilgi Sorunu</h1>
-          <p> Son zamanlarda hayatımıza yeni bir kavram girdi: Yapay Zeka. 
-        Herkesin devamlı bahsettiği yapay zeka, aslında epeydir hayatımızda 
-        var yalnızca biz çok farkında değiliz. ChatGPT ve bunun gibi artık halka 
-        açık olan uygulamalarla yapay zeka biraz daha görünür oldu.
-            <p> <a href="ai.html">Daha fazlasını kumak için tıklayınız...</a></p>
-        </p>
-            
 
        <div class="transparent-block">
         <h1>Arkhe ile ilgili kısa bir yazı</h1>
@@ -159,7 +177,14 @@
         </div>
 
 
-   
+       <div class="transparent-block">
+        <h1>Pre-Sokratik Dönem Filozofları Haritası</h1>
+          <p> Antikçağ Filozofları ile ilgili güzel bir harita
+            <p><a href="trpresoc.html">Daha fazlasını kumak için tıklayınız...</a></p>
+        </p>
+            
+          </p>
+        </div>
 
         
 
