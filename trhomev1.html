@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İpek'in Arşivine Hoşgeldiniz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('4.png') center center fixed;
+      background-size: cover;
+      margin: 0;
+      font-family: 'Neucha', cursive;
+      color: #4b2c34;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #ba581b;
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-shadow: 1px 1px 1px rgb(235, 224, 251), 2px 2px 1px rgb(255, 255, 255);
+      color: rgb(139, 51, 117);
+      text-align: center;
+      background-color: #fefeffa2;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255,255,255,0.6);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .language-switcher a {
+      text-decoration: none;
+      color: #5a3a42;
+      font-weight: bold;
+      font-family: 'Neucha', cursive;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      padding: 25px 15px;
+      text-align: center;
+      text-decoration: none;
+      color: #5a3a42;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card:hover {
+      background-color: #efe4f5;
+      transform: scale(1.03);
+    }
+
+    .icon {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 5px;
+      transition: all 0.3s ease;
+    }
+
+    /* Masaüstü için hover */
+    .card:hover .felsefe-icon {
+      content: url('cat3.gif');
+    }
+
+    .card:hover .bilim-icon {
+      content: url('cat3.gif');
+    }
+
+    .card:hover .kitap-icon {
+      content: url('cat3.gif');
+    }
+
+    .card:hover .yoga-icon {
+      content: url('cat3.gif');
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6f6f6f;
+      margin: 40px auto 20px;
+    }
+  </style>
+
+  <script>
+    function swapImage(el, gifSrc, pngSrc) {
+      const img = el.querySelector('img');
+      img.src = gifSrc;
+
+      // Parmak çekildiğinde geri dön
+      setTimeout(() => {
+        img.src = pngSrc;
+      }, 1500); // 1.5 saniye göster
+    }
+  </script>
+</head>
+<body>
+
+  <div class="language-switcher">
+    <a href="enhomev1.html">English</a>
+  </div>
+
+  <header>
+    <h1><img src="sm2.png" alt="İpek'in Arşivi" style="max-width: 250px;"></h1>
+  </header>
+
+  <h2>Anasayfa</h2>
+
+  <div class="card-container">
+    <a href="felsefe.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/felsefe.png')">
+      <img src="mix/felsefe.png" alt="Felsefe" class="icon felsefe-icon">
+      Felsefe
+    </a>
+
+    <a href="bilim.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/bilim.png')">
+      <img src="mix/bilim.png" alt="Bilim" class="icon bilim-icon">
+      Bilim
+    </a>
+
+    <a href="kitap.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/kitap.png')">
+      <img src="mix/kitap.png" alt="Kitap Notları" class="icon kitap-icon">
+      Kitap Notları
+    </a>
+
+    <a href="yoga.html" class="card"
+       ontouchstart="swapImage(this, 'cat3.gif', 'mix/yoga.png')">
+      <img src="mix/yoga.png" alt="Yoga" class="icon yoga-icon">
+      Yoga
+    </a>
+  </div>
+
+  <footer>© 2025 İpek Üremek</footer>
+
+</body>
+</html>
